@@ -28,6 +28,9 @@ video {
   display: none;
 
 }
+#nav-links {
+  display: none;
+}
 /* style rule for header content */
 header {
   text-align: center;
@@ -40,29 +43,37 @@ header h1 {
   font-family: DM Serif display;
 
 }
+.mobile h1 {
+  margin: 2% 0 0 3%;
+}
 /* style rule for navigation area */
 nav {
   background-color: #373684;
 
 }
-nav ul {
-  list-style-type:none;
-  text-align: center;
 
-}
-nav li {
-  display: block;
-  font-size: 2em;
-  border-top: 1px solid #e5e9fc;
-
-}
-nav li a {
-  display: block;
+.mobile-nav a {
   color: #fff;
   text-align: center;
-  padding: 0.5em 1em;
+  font-size: 2em;
   text-decoration: none;
+  padding: 3%;
+  display: block;
+}
 
+.mobile-nav a.nav-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+
+.nav-icon div {
+  height: 40px;
+  width: 40px;
+  background-color: #2a1f14;
 }
 /* style rule for main content */
 main {
@@ -121,6 +132,18 @@ main p {
   font-size: 1.5em;
   display: block;
 
+}
+#questions p {
+  cursor: pointer;
+}
+#answer {
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+#answer h2 {
+  display: none;
 }
 .map {
   border: 5px solid #373684;
@@ -199,6 +222,9 @@ footer a {
 .mobile {
   display: none;
 }
+.mobile-nav {
+  display: none;
+}
 /* Tablet Viewport: Style rule for header content */
 span.tab-desk {
   display: inline;
@@ -211,6 +237,15 @@ nav li {
 }
 nav li a {
   padding: 0.5em;
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+nav ul {
+  list-style-type:none;
+  text-align: center;
+
 }
 /* Tablet Viewport: Style rule for grid */
 .grid{
